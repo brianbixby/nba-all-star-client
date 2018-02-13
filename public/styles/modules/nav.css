@@ -2,7 +2,7 @@
 .logo {
   position: absolute;
   left: 16px;
-  top: 4px;
+  top: 10px;
   height: auto;
   z-index: 103;
 }
@@ -25,7 +25,7 @@
   padding-right: 3px;
 }
 .socials {
-  top: 8px;
+  top: 10px;
   float: right;
   position: relative;
   z-index: 105;
