@@ -6,12 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="https://use.fontawesome.com/9fa5931d9f.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
-    <link rel="stylesheet" href="vendor/styles/reset.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oswald:700" rel="stylesheet">
     <link rel="stylesheet" href="vendor/styles/bootstrap.css">
+    <link rel="stylesheet" href="vendor/styles/reset.css">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/layout.css">
     <link rel="stylesheet" href="styles/modules.css">
     <link rel="stylesheet" href="styles/modules/nav.css">
+    <link rel="stylesheet" href="styles/modules/intro.css">
     <link rel="stylesheet" href="styles/state.css">
   </head>
   <body>
@@ -34,8 +37,42 @@
     </header>
 
     <main>
-      <section id="startView" class="view start startView hidden">
-
+      <div class="pop-up">
+        <div class="pop-up-background"></div>
+        <button id="pop-up-block">
+            <svg viewBox="0 0 20 20">
+              <g transform="translate(1.000000, 1.000000)">
+                <path d="M18,0 L0,18 L18,0 Z"></path>
+                <path d="M0,0 L18,18 L0,0 Z"></path>
+              </g>
+            </svg>
+          </button>
+      </div>
+      <section id="introView" class="view introView hidden">
+        <div class="container">
+          <h1 class="headline center">BUILD YOUR OWN NBA ALL-STAR TEAM!</h1>
+        </div>
+        <div class="banner-image">
+          <div class="background">
+            <img class="intro-background intro-images" src="images/intro_background1.png">
+            <img class="intro-curry intro-images" src="images/intro_curry.png">
+            <img class="intro-lebron intro-images" src="images/intro_lebron.png">
+          </div>
+        </div>
+        <div class="container">
+          <div class="narrow-container center">
+            <p class="description">
+                It's All-Star weekend, and you've been selected as one of the two best players in the world. The other guy is your on-court rival and critics say he's the best player in the game. Now it's time for you to pick your squad, <span id="pop-up-trigger"class="red-link">playground style</span>.
+                Are you up for the challenge?
+            </p>
+            <p class="author">
+              BY BRIAN BIXBY
+            </p>
+            <button id="start-button">
+              START
+            </button>
+          </div>
+        </div>
       </section>
     </main>
 
@@ -44,5 +81,9 @@
     </footer>
     <script src="vendor/scripts/jquery.js"></script>
     <script src="vendor/scripts/handlebars.js"></script>
+    <script src="vendor/scripts/page.js"></script>
+    <script src="scripts/models/intro.js"></script>
+    <script src="scripts/views/intro-view.js"></script>
+    <script src="scripts/controllers/routes.js"></script>
   </body>
 </html>

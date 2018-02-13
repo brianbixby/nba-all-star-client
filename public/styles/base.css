@@ -1,6 +1,10 @@
 *, *:before, *:after {
   box-sizing: inherit;
 }
+h1, h2, h3, h4, h5, h6, p, a, span {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
 a {
   text-decoration: none;
 }
@@ -14,11 +18,15 @@ li {
   text-align: -webkit-match-parent;
 }
 header {
-  position: relative;
+  position: fixed;
   top: 0;
   left: 0;
   background-color: white;
   height: 38px;
   width: 100%;
   z-index: 101;
+}
+main {
+  margin-top: 38px;
+  position: relative;
 }

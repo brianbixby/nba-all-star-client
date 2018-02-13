@@ -4,3 +4,9 @@
 .hidden {
   display: none;
 }
+.center {
+  text-align: center;
+}
+.container {
+  width: auto;
+}
